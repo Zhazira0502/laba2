@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap");
+
+
+/*  ***************************** Header Start *************/
+.header {
+  position: relative;
+}
+.header.abs-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  display: block;
+  max-width: 109px;
+}
+.primary-menu {
+  position: relative;
+}
+.primary-menu .mobile-menu {
+  display: none;
+}
+.primary-menu li a {
+  color: #263a41;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+.primary-menu li a:hover {
+  color: #ff817e;
+}
+@media screen and (max-width: 767px) {
+  .primary-menu .mobile-menu {
+    color: #ff817e;
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+  }
+  .primary-menu ul {
+    background-color: #fcf5ee;
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .primary-menu li a {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .primary-menu li {
+    display: inline-block;
+  }
+}
+/*  ***************************** Header End *************/
+
+/*  ***************************** Banner Section Start *************/
+.banner {
+  background: url(../images/leaf.png) no-repeat left center/12.5%;
+  padding: 12% 0;
+}
+.banner .spa-img {
+  width: 40.4%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn {
+  background-color: #dbc5ad;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+  min-width: 170px;
+  padding: 20px 15px;
+}
+.video-btn {
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1199px) {
+  .banner {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .banner {
+    padding-top: 130px;
+  }
+  .banner .spa-img {
+    display: none;
+  }
+}
+/*  ***************************** Banner Section End *************/
+
+/*  ***************************** Appointment Section Start *************/
+.appointment .v2 {
+  padding-bottom: 0;
+  border-bottom: 1px solid #fdd5d5;
+}
+.appointment .appointment-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.appointment .appointment-wrap figure {
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+}
+.appointment .appointment-wrap .appointment-form {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+  padding-left: 100px;
+}
+.appointment .appointment-wrap .appointment-form form {
+  max-width: 650px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.appointment-form {
+  background-color: #fff9f8;
+}
+.appointment-form .form-field {
+  position: relative;
+  width: 100%;
+}
+.appointment-form .form-field input, .appointment-form .form-field textarea,
+.appointment-form .form-field select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d4d3d3;
+  color: #999;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.appointment-form .form-field select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+}
+.appointment-form .form-field .select-field {
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .appointment .appointment-wrap figure {
+    display: none;
+  }
+  .appointment .appointment-wrap .appointment-form {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 30px 15px;
+  }
+  .appointment .appointment-wrap .appointment-form form {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .appointment-form .form-field.half-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+/*  ***************************** Appointment Section End *************/
+
